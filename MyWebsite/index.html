@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>
+        My first website.
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+    <style>
+        .row{
+            width:720px;
+            margin: 10px auto 10px auto ;
+        }
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <body background="img/background.jpg"></body>
+    <h1 style="font-family:sans-serif;">
+        <!--
+This is a heading
+        
+    </h1>
+    <img src="img/cinnamoroll.png" width="200" height="100">
+    <h2>
+        this is a cinnamoroll saying hi!
+        </h2>
+        <p>
+            this is a paragraph<br>
+        -->
+        
+
+
+    
+        <div class="row">
+            <div class="image-container"><img id="icon1" src="img/icon1.png" height="200" width="200"
+                onmouseover= "this.src='img/icon12.png';"
+                    onmouseout= "this.src='img/icon1.png';"
+                onmousedown= "this.src='img/icon11.png';"
+                    onmouseup= "this.src='img/icon1.png';"/></div>
+            <div class="image-container"><img id="icon2" src="img/icon2.png" height="200" width="200"
+                onmouseover= "this.src='img/icon22.png';"
+                    onmouseout= "this.src='img/icon2.png';"
+                onmousedown= "this.src='img/icon21.png';"
+                    onmouseup= "this.src='img/icon2.png';"/></div>
+            <div class="image-container"><img id="icon3" src="img/icon3.png" height="200" width="200"
+                onmouseover= "this.src='img/icon32.png';"
+                    onmouseout= "this.src='img/icon3.png';"
+                onmousedown= "this.src='img/icon31.png';"
+                    onmouseup= "this.src='img/icon3.png';"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="icon4" src="img/icon4.png" height="200" width="200"
+                onmouseover= "this.src='img/icon42.png';"
+                    onmouseout= "this.src='img/icon4.png';"
+                onmousedown= "this.src='img/icon41.png';"
+                    onmouseup= "this.src='img/icon4.png';"/></div>
+            <div class="image-container"><img id="icon5" src="img/icon5.png" height="200" width="200"
+                onmouseover= "this.src='img/icon52.png';"
+                    onmouseout= "this.src='img/icon5.png';"
+                onmousedown= "this.src='img/icon51.png';"
+                    onmouseup= "this.src='img/icon5.png';"/></div>
+            <div class="image-container"><img id="icon6" src="img/icon6.png" height="200" width="200"
+                onmouseover= "this.src='img/icon62.png';"
+                    onmouseout= "this.src='img/icon6.png';"
+                onmousedown= "this.src='img/icon61.png';"
+                    onmouseup= "this.src='img/icon6.png';"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="icon7" src="img/icon7.png" height="200" width="200"
+                onmouseover= "this.src='img/icon72.png';"
+                    onmouseout= "this.src='img/icon7.png';"
+                onmousedown= "this.src='img/icon71.png';"
+                    onmouseup= "this.src='img/icon7.png';"/></div>
+            <div class="image-container"><img id="icon8" src="img/icon8.png" height="200" width="200"
+                onmouseover= "this.src='img/icon82.png';"
+                    onmouseout= "this.src='img/icon8.png';"
+                onmousedown= "this.src='img/icon81.png';"
+                    onmouseup= "this.src='img/icon8.png';"/></div>
+            <div class="image-container"><img id="icon9" src="img/icon9.png" height="200" width="200"
+                onmouseover= "this.src='img/icon92.png';"
+                    onmouseout= "this.src='img/icon9.png';"
+                onmousedown= "this.src='img/icon91.png';"
+                    onmouseup= "this.src='img/icon9.png';"/></div>
+        </div>
+
+
+        <script>
+            var sound1 = new buzz.sound("sound/wave.mp3");
+            var sound2 = new buzz.sound("sound/shishiodoshi.mp3");
+            var sound3 = new buzz.sound("sound/fire.mp3");
+            var sound4 = new buzz.sound("sound/AC.mp3");
+            var sound5 = new buzz.sound("sound/fire.mp3");
+            var sound6 = new buzz.sound("sound/goldfish.mp3");
+            var sound7 = new buzz.sound("sound/sleep.mp3");   
+            var sound8 = new buzz.sound("sound/hot water.mp3");
+            var sound9 = new buzz.sound("sound/flip page.mp3");
+     
+            window.onload = function() {
+                
+                document.getElementById('icon1').addEventListener('mousedown', function () {sound1.play(); });
+                document.getElementById('icon2').addEventListener('mousedown', function () {sound2.play(); }); 
+                document.getElementById('icon3').addEventListener('mousedown', function () {sound3.play(); }); 
+                document.getElementById('icon4').addEventListener('mousedown', function () {sound4.play(); });
+                document.getElementById('icon5').addEventListener('mousedown', function () {sound5.play(); }); 
+                document.getElementById('icon6').addEventListener('mousedown', function () {sound6.play(); }); 
+                document.getElementById('icon7').addEventListener('mousedown', function () {sound7.play(); });
+                document.getElementById('icon8').addEventListener('mousedown', function () {sound8.play(); }); 
+                document.getElementById('icon9').addEventListener('mousedown', function () {sound9.play(); }); 
+                   }  
+        </script>   
+</body>
+</html>
